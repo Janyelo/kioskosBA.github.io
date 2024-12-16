@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kioskos BA K_Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/icon.jpg" type="image/jpg">
+</head>
+<body class="grid-container">
+    <header class="header">
+        <section class="container-header">
+            <div class="cabezera">
+                <div class="logo">
+                    <h1 class="logo-title">Kioskos Baires</h1>
+                </div>
+                <div class="logo">
+                    <img class="logo-pick" src="imagenes/logotipo.jpg" alt="logotipo" title="logotipo">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <nav class="navbar">
+        <nav class="menu">
+            <a class="menu1" href="index.html" target="_blank">Inicio</a>
+            <a class="menu1" href="carrito.html" target="_blank">Carrito</a>
+            <a class="menu1" href="provedores.html" target="_blank">Provedores</a>
+            <a class="menu1" href="unete.html" target="_blank">Unete</a>
+        </nav>
+    </nav>
+    <section>
+        <div id="titulo"><h2>K_Online</h2></div>
+         <br>
+        <button id="btnPagar" onclick="pagar()">Pagar</button>
+        <button id="btnLimpiar" onclick="limpiarCarrito()">Vaciar Carrito</button>
+        <br><br>
+        <div id="carrito">
+            <h3>LISTA DE COMPRAS</h3>
+        </div>
+    </section>
+<body>
+    <article class="main">
+        <section class="container-card">
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">GALLETAS DE CHOCOLATE</h2>
+                    <img class="producto" src="imagenes/galletas de chocolate.jpg" alt="golocinas" title="golocinas">
+                    <p class="paragraph">$ 2000.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('GALLETAS DE CHOCOLATE', 2000)">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">GALLETAS DE VAINILLA</h2>
+                    <img class="producto" src="imagenes/galletas de vainilla.jpg" alt="golocinas" title="golocinas">
+                    <p class="paragraph">$ 2000.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('GALLETAS DE VAINILLA', 2000)">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">PANCHOS</h2>
+                    <img class="producto " src="imagenes/hotdogs.jpg" alt="Comida Rapida" title="Comida Rapida">
+                    <p class="paragraph">$ 1500.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('PANCHOS', 1500)">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">EMPANADAS</h2>
+                    <img class="producto " src="imagenes/empanadas.jpg" alt="Comida Rapida" title="Comida Rapida">
+                    <p class="paragraph">$ 1500.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('EMPANADAS', 1500)">Comprar</button>
+                </div>
+            </div>
+           
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">PAPITAS</h2>
+                    <img class="producto" src="imagenes/papitas.jpg" alt="snacks" title="snacks">
+                    <p class="paragraph">$ 1500.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('PAPITAS', 1500)">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">NACHOS</h2>
+                    <img class="producto" src="imagenes/nachos.jpg" alt="snacks" title="snacks">
+                    <p class="paragraph">$ 1500.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('NACHOS', 1500)">Comprar</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">RECUERDO</h2>
+                    <img class="producto" src="imagenes/recuerdos.jpg" alt="souvenirs" title="souvenirs">
+                    <p class="paragraph">$ 10500.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('RECUERDO', 10500)">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">CAFE CALIENTE</h2>
+                    <img class="producto" src="imagenes/cafecaliente.jpg" alt="bebidas" title="bebidas">
+                    <p class="paragraph">$ 1500.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('CAFE CALIENTE', 1500)">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">CAFE FRIO</h2>
+                    <img class="producto" src="imagenes/cafefrio.jpg" alt="bebidas" title="bebidas">
+                    <p class="paragraph">$ 2500.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('CAFE FRIO', 2500)">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">COCA COLA</h2>
+                    <img class="producto" src="imagenes/refrescos.jpg" alt="bebidas" title="bebidas">
+                    <p class="paragraph">$ 2500.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('COCA COLA', 2500)">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">AGUA</h2>
+                    <img class="producto" src="imagenes/agua.jpg" alt="bebidas" title="bebidas">
+                    <p class="paragraph">$ 1000.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('AGUA', 1000)">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">REGALO</h2>
+                    <img class="producto" src="imagenes/regalos.jpg" alt="presentes"  title="presentes">
+                    <p class="paragraph">$ 12500.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('REGALO', 12500)">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-text">
+                    <h2 class="title">COPIAS</h2>
+                    <img class="producto" src="imagenes/fotocopias.jpg" alt="papeleria" title="papeleria">
+                    <p class="paragraph">$ 100.-</p>
+                    <button id="btnComprar" onclick="agregarProducto('COPIAS', 100)">Comprar</button>
+                </div>
+            </div>    
+    </article>
+
+
+<footer class="container-footer">
+        
+    <section class="ubicacion">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5846821413197!2d-58.4578676!3d-34.6146622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1ea91fd4cf%3A0xbaee7969a08f24df!2sPlaza%20Irlanda!5e0!3m2!1ses-419!2sar!4v1728863000372!5m2!1ses-419!2sar" width="400" height="325" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <section class="redes">
+        <a href="https://www.instagram.com/"> <img src="imagenes/instagram.png" alt="instagram" title="instagram" target="_blank" width="30px"></a>
+        <a href="https://www.facebook.com/"><img src="imagenes/facebook.png" alt="facebook" title="facebook" target="_blank" width="30px"></a>
+        <a href="https://x.com/"><img src="imagenes/twitter.png" alt="x" title="x" target="_blank" width="30px"></a>
+        <a href="https://wa.me/+5491155966958"><img src="imagenes/whatsapp.png" alt="whatsapp" title="whatsapp" target="_blank" width="30px"></a>
+    </section>
+
+    <section class="pie">
+        DERECHOS RESERVADOS <hr>
+        Jc_Desarrolladores
+        <hr>
+        <a class="menu1" href="ayuda.html" target="_blank">A Y U D A</a>
+    </section>
+</footer>
+
+<script src="js/dom.js"> </script> 
+</body>
+</html>

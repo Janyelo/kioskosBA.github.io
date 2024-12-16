@@ -1,0 +1,2 @@
+Este proyecto de desarrollo web está basado en la creación de una sitio web con diversas características necesarias para poder exponer todo los conocimientos recolectados en las clases del curso de FRONT END basado en HTML/CSS/JavaScript. De esta manera lograr integrar la mayoría de conocimientos de manera organizada y funcional, hasta lograr el desarrollo de un sitio con características típicas de un E-commerce.
+En esta oportunidad se desarrollo un proyecto relacionado al web site de un quiosco que ofrezca variedad de productos.
